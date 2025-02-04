@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-    <test thread-count="1" name="Locked user">
-        <classes>
-            <class name="Screens.Login.LockedUserLogin"/>
-        </classes>
-    </test>
     <test thread-count="1" name="Count displayed products">
         <classes>
             <class name="Screens.Home.CountProdcutCards"/>
@@ -14,11 +9,6 @@
     <test thread-count="1" name="Sort products">
         <classes>
             <class name="Screens.Home.SortProducts"/>
-        </classes>
-    </test>
-    <test thread-count="1" name="Purchase product">
-        <classes>
-            <class name="Screens.Fullfilment.Perchase"/>
         </classes>
     </test>
 

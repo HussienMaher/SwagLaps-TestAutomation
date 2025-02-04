@@ -19,9 +19,6 @@ public class CountProdcutCards extends TestBase {
     @Test
     public void getItemsCount (){
         lSc.standardUserLogin();
-//        hSc.openFirstProduct();
-//        hSc.countItems();
-//        Assert.assertEquals(hSc.countItems(),6);
         int i = hSc.countByScroll();
         Assert.assertEquals(i,6);
         System.out.println("Items count = " + i);

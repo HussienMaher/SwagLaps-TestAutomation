@@ -58,7 +58,7 @@ public class mobileGestures extends waits {
         Map<String, Object> params = new HashMap<>();
         params.put("left", dim.screenSize.width /4);
         params.put("top", dim.screenSize.height /4);
-        params.put("width", dim.screenSize.width *0.5 );
+        params.put("width", dim.screenSize.width /2 );
         params.put("height", h1);
         params.put("direction", dir);
         params.put("percent",1);
@@ -67,7 +67,7 @@ public class mobileGestures extends waits {
 
         do {
             canScrollMore1 = (Boolean) ((JavascriptExecutor) driver).executeScript("mobile: scrollGesture", params);
-            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
             x ++;
         } while (canScrollMore1);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));

@@ -16,7 +16,7 @@ public class homeSc extends base {
 
     mobileActions act = new mobileActions();
 
-    @AndroidFindBy(xpath = "(//android.view.ViewGroup[@content-desc=\"test-Item\"])[1]/android.view.ViewGroup/android.widget.ImageView")
+    @AndroidFindBy(xpath = "(//android.view.ViewGroup[@content-desc=\"test-Item\"])[1]")
         private WebElement firstItemCard;
 
         @AndroidFindBy(accessibility = "test-Menu")

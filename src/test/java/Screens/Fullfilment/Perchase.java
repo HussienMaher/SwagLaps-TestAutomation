@@ -31,7 +31,7 @@ public class Perchase extends TestBase {
         return userData;
     }
 
-    @Test(dataProvider = "checkoutData")
+    @Test
     public void getItemsCount (){
 
         lSc.standardUserLogin();
