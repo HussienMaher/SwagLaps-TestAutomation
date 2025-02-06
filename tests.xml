@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
+    <test thread-count="1" name="Draw swaglaps logo">
+        <classes>
+        <class name="Screens.Draw.DrawLogo"/>
+        </classes>
+    </test>
     <test thread-count="1" name="Count displayed products">
         <classes>
             <class name="Screens.Home.CountProdcutCards"/>
@@ -11,7 +16,11 @@
             <class name="Screens.Home.SortProducts"/>
         </classes>
     </test>
-
+    <test thread-count="1" name="Buy item">
+    <classes>
+        <class name="Screens.Fullfilment.Perchase"/>
+    </classes>
+    </test>
     <!-- Test -->
 </suite>
         <!-- Suite -->

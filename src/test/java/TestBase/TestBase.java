@@ -41,6 +41,7 @@ public class TestBase extends appiumDriver {
 
         caps.setCapability("appium:version", "14");
 
+
         caps.setCapability("appium:deviceName", "RK8W2000KQH");
 
         caps.setCapability("appium:appPackage", "com.swaglabsmobileapp");

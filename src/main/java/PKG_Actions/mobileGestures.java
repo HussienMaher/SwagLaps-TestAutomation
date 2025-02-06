@@ -166,7 +166,7 @@ public class mobileGestures extends waits {
         params.put("width", 200);
         params.put("height", 500);
         params.put("direction", direction);
-        params.put("percent", 1);
+        params.put("percent", 2);
         params.put("speed",1500);
         do {
             canScrollMore = (Boolean) ((JavascriptExecutor) driver).executeScript("mobile: scrollGesture", params);
