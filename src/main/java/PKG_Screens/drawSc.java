@@ -50,22 +50,22 @@ public class drawSc extends base {
         draw.addAction(finger.createPointerMove(Duration.ofMillis(0), PointerInput.Origin.viewport(), startX, startY));
         draw.addAction(finger.createPointerDown(PointerInput.MouseButton.LEFT.asArg()));
 
-        for (int x = radius; x >= 0; x -= 15) {
+        for (int x = radius; x >= -360; x -= 15) {
             int y = (int) Math.sqrt(Math.pow(radius, 2) - Math.pow(x, 2));
             draw.addAction(finger.createPointerMove(Duration.ofMillis(50), PointerInput.Origin.viewport(), centerX + x, centerY - y));
         }
-        for (int y = radius; y >= 0; y -= 15) {
-            int x = -(int) Math.sqrt(Math.pow(radius, 2) - Math.pow(y, 2));
-            draw.addAction(finger.createPointerMove(Duration.ofMillis(50), PointerInput.Origin.viewport(), centerX + x, centerY - y));
-        }
-        for (int x = -radius; x <= 0; x += 15) {
+//        for (int y = radius; y >= 0; y -= 15) {
+//            int x = -(int) Math.sqrt(Math.pow(radius, 2) - Math.pow(y, 2));
+//            draw.addAction(finger.createPointerMove(Duration.ofMillis(50), PointerInput.Origin.viewport(), centerX + x, centerY - y));
+//        }
+        for (int x = -radius; x <= 360; x += 15) {
             int y = (int) Math.sqrt(Math.pow(radius, 2) - Math.pow(x, 2));
             draw.addAction(finger.createPointerMove(Duration.ofMillis(50), PointerInput.Origin.viewport(), centerX + x, centerY + y));
         }
-        for (int y = -radius; y <= 0; y += 15) {
-            int x = (int) Math.sqrt(Math.pow(radius, 2) - Math.pow(y, 2));
-            draw.addAction(finger.createPointerMove(Duration.ofMillis(50), PointerInput.Origin.viewport(), centerX + x, centerY - y));
-        }
+//        for (int y = -radius; y <= 0; y += 15) {
+//            int x = (int) Math.sqrt(Math.pow(radius, 2) - Math.pow(y, 2));
+//            draw.addAction(finger.createPointerMove(Duration.ofMillis(50), PointerInput.Origin.viewport(), centerX + x, centerY - y));
+//        }
 
 
 
